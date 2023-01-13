@@ -1,0 +1,21 @@
+//getting all todos
+GET http://localhost:3030/todos
+
+###
+
+//creating a new todo
+POST http://localhost:3030/todos/new
+Content-Type: application/json
+
+{
+    "text" : "get pizza"
+   
+}
+
+###
+//completing a todo
+GET  http://localhost:3030/todos/complete/ id
+
+###
+//deleting a todo
+DELETE http://localhost:3030/todos/delete/ id
